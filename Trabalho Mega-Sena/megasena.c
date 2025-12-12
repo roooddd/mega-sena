@@ -19,7 +19,6 @@ int pedir_dezenas() {
         }
 
     } while (dezenas < 6 || dezenas > 15);
-
     return dezenas;
 }
 
@@ -36,7 +35,6 @@ int qtd_manuais() {
         }
 
     } while (manuais < 0 || manuais > 3);
-
     return manuais;
 }
 
@@ -53,7 +51,6 @@ int qtd_surpresinhas() {
         }
 
     } while (surpresinhas < 0 || surpresinhas > 7);
-
     return surpresinhas;
 }
 
@@ -69,7 +66,6 @@ void solicitar_apostas_manuais(int quantas_apostas, int quantas_dezenas, int mat
         escanear_dezenas(quantas_dezenas, matriz_de_apostas[contador], contador + 1);
         contador++;
     }
-    
     return;
 }
 
@@ -100,7 +96,6 @@ void escanear_dezenas(int quantas_dezenas, int lista_dezenas[quantas_dezenas], i
     for (int i = 0; i < quantas_dezenas; i++) {
         lista_dezenas[i] = dezenas[i];
     }
-
     return;
 }      
 
@@ -113,7 +108,6 @@ bool tem_numero_repetido(int dezenas[], int tamanho) {
             }
         }
     }
-
     return false;
 }
 
@@ -124,7 +118,6 @@ bool valida_dezenas(int dezenas[], int tamanho) {
             return false;
         }
     }
-
     return true;
 }
 
@@ -144,7 +137,6 @@ void gerador_de_surpresinhas(int quantas_surpresinhas, int quantas_dezenas, int 
             surpresinhas_geradas[i][j] = dezenas;
         }
     }
-
     return;
 }
 
@@ -200,7 +192,6 @@ void mostra_apostas(int posicao_manuais, int apostadas_manuais, int apostas_manu
 
     //exibe as teimosinhas
     printf("Teimosinhas: %d\n", quantas_teimosinhas);
-
     return;
 }
 
@@ -241,7 +232,6 @@ void exibir_valores(int teimosinhas, int dezenas, int manuais, int surpresinhas)
         printf("\nERRO! Opcao invalida. Tente novamente.");
         return;
     }
-    
     return;
 }
 
